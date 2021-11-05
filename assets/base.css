@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #cd1818;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #ebe3e3;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@keyframes faceIn {
+    from {
+        opacity: 0;
+        top: 60px
+    } to {
+        opacity: 1;
+        top: 47px;
+    }   
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+    animation: fading .2s linear;
+}
+
+@keyframes fading {
+    from { 
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.modal_overlay {
+
+}
